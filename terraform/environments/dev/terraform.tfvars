@@ -1,0 +1,12 @@
+cluster_name  = "dev-eks"
+desired_size  = 1
+max_size      = 2
+min_size      = 1
+instance_type = "t2.micro"
+eks_cluster_role = "eksNodeGroupRole"
+eks_node_role  ="my-eks-cluster-node-role"
+subnet_ids    = ["subnet-0656bd27cc31282dd","subnet-0fb953ac5ba597a75"]
+security_group_id = "sg-0ed2561591bfb9585"
+key_name       = "test-key"
+cluster_role_arn =  "arn:aws:iam::664418956432:role/eks-cluster-role"
+node_role_arn    = "arn:aws:iam::664418956432:role/eksNodeGroupRole"
