@@ -62,5 +62,6 @@ module "eks" {
   max_size     = var.max_size
   min_size     = var.min_size
   instance_type = var.instance_type
+  capacity_type = "ON_DEMAND"
 }
 
